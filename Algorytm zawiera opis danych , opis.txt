@@ -1,7 +1,65 @@
 Algorytm zawiera opis danych , opis wyników oraz plan działania, czyli przetworzenia danych.
 Sposoby zapisu algorytmów:
--Opis słowny
--Lista kroków
--Pseudo język (Pseudo kod)
--Drzewo
--Język programowania
+- Opis słowny
+- Lista kroków
+- Pseudo język (Pseudo kod)
+- Drzewo
+- Język programowania
+
+Rodzaje algorytmów:
+
+- liniowe, czyli algorytmy sekwencyjne (PO KOLEI WYKONYWANE RZECZY)
+	1.Podnieś słuchawkę
+	2.Wybierz numer 6
+	3.Wybierz numer 6
+	4.Wybierz numer 7
+	5.Wybierz numer 5
+	6.Wybierz numer 6
+	7.Wybierz numer 7
+	8.Wybierz numer 2
+	9.Wybierz numer 2
+	10.Wybierz numer 2
+	11.Przekaż informacje
+	12.Odłoż słuchawkę
+
+- warunkowy, czyli algorytmy z rozgałęzieniami
+	1.Podnieś słuchawkę
+	2.Wybierz numer 6
+	3.Wybierz numer 6
+	4.Wybierz numer 7
+	5.Wybierz numer 5
+	6.Wybierz numer 6
+	7.Wybierz numer 7
+	8.Wybierz numer 2
+	9.Wybierz numer 2
+	10.Wybierz numer 2
+	11 Czy połączyłeś się? TAK -przejdź do kroku 12, NIE - przejdź do kroku 13
+	12.Przekaż informacje
+	13.Odłoż słuchawkę
+
+- iteracyjne, czyli algorytmy z pętla (algorytmy cykliczne)
+	1.Podnieś słuchawkę
+	2.Powtórz czynność 2 razy: wybierz 6
+	3.Wybierz numer 7
+	4.Wybierz numer 5
+	5.Wybierz numer 6
+	6.Wybierz numer 7
+	7.Powtórz czynność 3 razy: wybierz 2
+	8 Czy połączyłeś się? TAK -przejdź do kroku 12, NIE - przejdź do kroku 13
+	9.Przekaż informacje
+	10.Odłoż słuchawkę
+
+- algorytmy rekurencyjne(sam siebie wywołuje)
+
+MSB LSB
+
+1 BIT
+1 BYTE = 8 bit
+1 WORD = 2byte = 16 bit
+1 DWORD = 4byte =  32 bit
+1 QWORD(RZADKO)
+
+BIT - 0/1
+BYTE - 255
+2 BYTE - 4096
+
