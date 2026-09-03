@@ -1,0 +1,7 @@
+Algorytm zawiera opis danych , opis wyników oraz plan działania, czyli przetworzenia danych.
+Sposoby zapisu algorytmów:
+-Opis słowny
+-Lista kroków
+-Pseudo język (Pseudo kod)
+-Drzewo
+-Język programowania

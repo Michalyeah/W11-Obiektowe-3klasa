@@ -1,0 +1,14 @@
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\bin\Release\net10.0\Lkecja 1.exe
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\bin\Release\net10.0\Lkecja 1.deps.json
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\bin\Release\net10.0\Lkecja 1.runtimeconfig.json
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\bin\Release\net10.0\Lkecja 1.dll
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\bin\Release\net10.0\Lkecja 1.pdb
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.AssemblyInfoInputs.cache
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.AssemblyInfo.cs
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.csproj.CoreCompileInputs.cache
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.dll
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\refint\Lkecja 1.dll
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.pdb
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\Lkecja 1.genruntimeconfig.cache
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 1\Lkecja 1\obj\Release\net10.0\ref\Lkecja 1.dll
