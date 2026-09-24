@@ -1,0 +1,160 @@
+//deklaracja zmiennej typu string
+//Język silnego typowania
+string nazwaZmiennej = "Tekst";
+
+string imie = "Andrzej";
+string nazwisko = "Kmicic";
+
+string danePracownika;
+
+danePracownika = imie +" "+ nazwisko;
+
+string[] slowa = { "Andrzej", "Kmicic" };
+
+danePracownika = String.Join(" ", slowa);
+
+//INTERPOLACJA
+
+danePracownika = $"{imie} {nazwisko}";
+
+//@ Literał Tekstowy (Verbatim string)
+
+string zmiennaTekstowa = @"Tekst\r\n"; //Wyłączam interpretowanie znaków ucieczki
+string nazwaFolderu = "Zdjecia";
+Console.Write("Tekst\\r\\n");
+Console.WriteLine("Tekst");
+
+string ciezkaDostepu = @$"C:\Folder\{nazwaFolderu}";
+
+string klasa = "3AT";
+string @class = "string";
+
+//Wycinanie stringa
+string dane = "AB12345";
+string numer = dane.Substring(2); //Wycinam wszystko od począwszy od pozycji numer 2
+
+
+//Sprawdzanie pozycji
+// int pos = dane.IndexOf("1");
+
+// numer = dane.Substring(pos, 5);
+
+//Sprawdzanie czy zawiera
+bool czyZawiera = dane.Contains("1");
+
+//Podział Stringa
+string doPodzialu = "To jest mój tekst do podziału";
+
+string[] poPodziale = doPodzialu.Split(' ');
+
+//Zmiana wielkości liter
+string maleLitery = "abcdeFGh";
+string duzeLitery = maleLitery.ToUpper();
+
+//Zamiana znaków
+
+string tekstZeSpacjami = "AB C DE FG H";
+string bezSpacji = tekstZeSpacjami.Replace(" ", "");
+//                                  zmiana co ,na co
+
+//Usuniecie fragmentu stringa
+
+string doObrobki = "123AB4567890AB";
+string poObrobce = doObrobki.Remove(3, 2);
+//                  od jakiej pozycji, ile znaków
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------
+
+//Własny Split
+/*
+string[] podzielonyTekst = new string[8];
+int index = 0;
+
+while(true)
+{
+    bool czyJestSpacja = doPodzialu.Contains(" ");
+    if(czyJestSpacja == true)
+    {
+        int pos = doPodzialu.IndexOf(" ");
+        podzielonyTekst[index] = doPodzialu.Substring(0, pos);
+        doPodzialu = doPodzialu.Substring(pos + 1);
+        index++;
+    }
+    else
+    {
+        if(doPodzialu != "")
+        {
+            podzielonyTekst[index] = doPodzialu.Substring(0);
+        }
+        break;
+    }
+       
+}
+
+*/
+
+//Własny Contains
+/*
+bool czyyZawiera = Contains("ABCDEFGH","CD");
+
+bool Contains(string tekstPrzeszukiwany,string tekstWyszukiwany)
+{
+    int dlugosc = tekstWyszukiwany.Length;
+    for(int i = 0; i < tekstPrzeszukiwany.Length; i++)
+    {
+        if (tekstPrzeszukiwany.Substring(i,dlugosc) == tekstWyszukiwany)
+        {
+            return true;
+        }
+    }
+    return false;
+};
+*/
+
+
+string ZmienionyTekst = Reeplace("Nie kupuje kubkok","k","x");
+
+string Reeplace(string TekstDoZmiany,string Co, string NaCo)
+{
+
+    string TekstPoZmianie = "";
+    bool czyJestCo = TekstDoZmiany.Contains(Co);
+    //Sprawdfzam czy jest co zmieniać
+    if (czyJestCo)
+    {
+        while (czyJestCo)
+        {
+            int pos = TekstDoZmiany.IndexOf(Co);
+            if (pos == 0)//Wyszykiwany tekst znajduje się na pierwszej pozycji
+            {
+                TekstPoZmianie = NaCo + TekstDoZmiany.Substring(pos + 1);
+            }
+            else if (pos > 0 && pos < TekstDoZmiany.Length - NaCo.Length)//Wyszukiwany tekst znajduje się na środkowej pozycji
+            {
+                TekstPoZmianie = TekstDoZmiany.Substring(0, pos) + NaCo + TekstDoZmiany.Substring(pos + Co.Length) ;
+            }
+            else if(pos > 0 && pos == TekstDoZmiany.Length - NaCo.Length)//Wyszukiwany tekst znajduje się na ostatniej pozycji
+            {
+                TekstPoZmianie = TekstDoZmiany.Substring(0, pos) + NaCo;
+            }
+
+            TekstDoZmiany = TekstPoZmianie;
+            czyJestCo = TekstDoZmiany.Contains(Co);
+        }
+
+    }
+
+
+
+
+
+    return TekstPoZmianie;
+}
+
+Console.WriteLine(ZmienionyTekst);
