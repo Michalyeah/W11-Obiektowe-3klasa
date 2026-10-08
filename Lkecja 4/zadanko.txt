@@ -1,0 +1,76 @@
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Text;
+
+
+[DllImport("kernel32", CharSet = CharSet.Unicode)]
+static extern long WritePrivateProfileString(string Section, string Key, string Value, string FilePath);
+
+[DllImport("kernel32", CharSet = CharSet.Unicode)]
+static extern long GetPrivateProfileString(string Section, string Key, string Default,
+StringBuilder ReVal, int Size, string FilePath);
+
+string path;
+string EXE = Assembly.GetExecutingAssembly().GetName().Name;
+path = new FileInfo(@".\Config.ini" ?? EXE + ".ini").FullName.ToString();
+
+string Read(string Key, string? Section)
+{
+    var RetVal = new StringBuilder(255);
+    GetPrivateProfileString(Section ?? EXE, Key, "", RetVal, 255, path);
+    return RetVal.ToString();
+}
+
+void Write(string? Section, string? Key, string? Value)
+{
+    WritePrivateProfileString(Section ?? EXE, Key, Value, path);
+}
+
+void DeleteKey(string Key, string? Section)
+{
+    Write(Key, null, Section ?? EXE);
+}
+
+void DeleteSection(string? Section)
+{
+    Write(null, null, Section ?? EXE);
+}
+
+Console.WriteLine("Start aplikacji");
+Console.WriteLine("Oczytuję plik konfiguracyjny");
+string appTitle = Read("name","Application");
+Console.Title = appTitle;
+
+Console.WriteLine("Zapisuję do pliku");
+Write("Bazadanych", "user", "admin");
+
+bool repeat = true;
+while (repeat == true)
+{
+    Console.WriteLine("Podaj czynność: Wpisac , Odczytac, Zakonczyc");
+    string akcja = Console.ReadLine();
+    akcja.ToLower();
+    if (akcja.Contains("wpisac") == true)
+    {
+        Console.WriteLine("Podaj Sekcje,Klucz,Wartość"); 
+        string Wpisany = Console.ReadLine();
+        string[] pojemnikWpisany = Wpisany.Split(",");
+        Write(pojemnikWpisany[0], pojemnikWpisany[1], pojemnikWpisany[2]);
+        
+
+    }
+    else if (akcja.Contains("odczytac") == true)
+    {
+        Console.WriteLine("Podaj sekcje: ");
+        string sekcja = Console.ReadLine();
+        Console.WriteLine("Podaj klucz: ");
+        string klucz = Console.ReadLine();
+        string Odczytany = Read(klucz, sekcja);
+        Console.WriteLine(Odczytany);
+    }
+    else if (akcja.Contains("zakonczyc") == true)
+    {
+        Console.WriteLine("Zakończono proces");
+        repeat = false;
+    }
+}
