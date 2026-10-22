@@ -1,0 +1,5 @@
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 8\ConsoleApp3\obj\Debug\net10.0\ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 8\ConsoleApp3\obj\Debug\net10.0\ConsoleApp3.AssemblyInfoInputs.cache
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 8\ConsoleApp3\obj\Debug\net10.0\ConsoleApp3.AssemblyInfo.cs
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 8\ConsoleApp3\obj\Debug\net10.0\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\Informatyka\Desktop\Michał Kula 3AT\W11-Obiektowe-3klasa\Lkecja 8\ConsoleApp3\obj\Debug\net10.0\ConsoleApp3.sourcelink.json

@@ -47,11 +47,12 @@ Write("Bazadanych", "user", "admin");
 bool repeat = true;
 while (repeat == true)
 {
-    Console.WriteLine("Podaj czynność: Wpisac , Odczytac, Zakonczyc");
+    Console.WriteLine("Podaj czynność: 1 -  Wpisac , 2 - Odczytac, 3 - Zakonczyc");
     string akcja = Console.ReadLine();
     akcja.ToLower();
-    if (akcja.Contains("wpisac") == true)
+    if (akcja.Contains("1") == true)
     {
+        Console.Clear();
         Console.WriteLine("Podaj Sekcje,Klucz,Wartość"); 
         string Wpisany = Console.ReadLine();
         string[] pojemnikWpisany = Wpisany.Split(",");
@@ -59,8 +60,9 @@ while (repeat == true)
         
 
     }
-    else if (akcja.Contains("odczytac") == true)
+    else if (akcja.Contains("2") == true)
     {
+        Console.Clear();
         Console.WriteLine("Podaj sekcje: ");
         string sekcja = Console.ReadLine();
         Console.WriteLine("Podaj klucz: ");
@@ -68,8 +70,9 @@ while (repeat == true)
         string Odczytany = Read(klucz, sekcja);
         Console.WriteLine(Odczytany);
     }
-    else if (akcja.Contains("zakonczyc") == true)
+    else if (akcja.Contains("3") == true)
     {
+        Console.Clear();
         Console.WriteLine("Zakończono proces");
         repeat = false;
     }
